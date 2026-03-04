@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00f7ff">
+    <meta charset="UTF-8">
+    <title>Gestor X Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">GESTOR X PRO</div>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#archivos">Archivos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Gestión Inteligente</h1>
+    <p>Sube. Organiza. Elimina.</p>
+    <button class="btn" onclick="sorpresa()">Activar Sistema</button>
+</section>
+
+<section class="section" id="archivos">
+    <h2>Gestor de Archivos</h2>
+
+    <input type="file" id="fileInput" multiple hidden>
+
+    <button class="btn" onclick="document.getElementById('fileInput').click()">
+        Subir Archivos
+    </button>
+
+    <div class="explorer" id="fileList"></div>
+</section>
+
+<section class="section contacto" id="contacto">
+    <h2>Contacto</h2>
+    <p>Desarrollado por Onan Dev 🚀</p>
+    <p>Email: contacto@gestorxpro.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Gestor X Pro</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
